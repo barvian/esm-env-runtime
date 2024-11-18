@@ -4,10 +4,10 @@ Uses export conditions to return environment information in a way that works wit
 
 ## Usage
 
-Install with `npm install esm-env`, then import as needed:
+Install with `npm install esm-env-runtime`, then import as needed:
 
 ```js
-import { BROWSER, DEV, NODE } from 'esm-env';
+import { BROWSER, DEV, NODE } from "esm-env";
 ```
 
 ## License

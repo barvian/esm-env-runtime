@@ -1,48 +1,41 @@
 {
-	"name": "esm-env",
-	"version": "1.1.4",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/benmccann/esm-env.git"
-	},
-	"license": "MIT",
-	"homepage": "https://github.com/benmccann/esm-env",
-	"author": "Ben McCann (https://www.benmccann.com)",
-	"type": "module",
-	"scripts": {
-		"changeset:publish": "changeset publish"
-	},
-	"exports": {
-		".": {
-			"types": "./index.d.ts",
-			"browser": {
-				"node": {
-					"development": "./browser-dev-node.js",
-					"default": "./browser-node.js"
-				},
-				"default": {
-					"development": "./browser-dev.js",
-					"default": "./browser.js"
-				}
-			},
-			"default": {
-				"node": {
-					"development": "./dev-node.js",
-					"default": "./node.js"
-				},
-				"default": {
-					"development": "./dev.js",
-					"default": "./none.js"
-				}
-			}
-		}
-	},
-	"devDependencies": {
-		"@changesets/cli": "^2.27.9",
-		"@svitejs/changesets-changelog-github-compact": "^1.2.0"
-	},
-	"packageManager": "pnpm@9.13.0",
-	"engines": {
-		"pnpm": "^9.0.0"
-	}
+  "name": "esm-env-runtime",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barvian/esm-env-runtime.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/barvian/esm-env-runtime",
+  "author": "Max Barvian (https://barvian.me)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "browser": {
+        "node": {
+          "development": "./browser-dev-node.js",
+          "default": "./browser-node.js"
+        },
+        "default": {
+          "development": "./browser-dev.js",
+          "default": "./browser.js"
+        }
+      },
+      "default": {
+        "node": {
+          "development": "./dev-node.js",
+          "default": "./node.js"
+        },
+        "default": {
+          "development": "./dev.js",
+          "default": "./none.js"
+        }
+      }
+    }
+  },
+  "packageManager": "pnpm@9.13.0",
+  "engines": {
+    "pnpm": "^9.0.0"
+  }
 }
